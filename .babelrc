@@ -1,0 +1,30 @@
+{
+  "presets": ["@babel/preset-env", "@babel/preset-typescript", "@babel/react", "react-app"],
+  "plugins": [
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "legacy": true
+      }
+    ],
+    [
+      "@babel/plugin-proposal-class-properties",
+      {
+        "loose": true
+      }
+    ],
+    [
+      "react-css-modules",
+      {
+        "filetypes": {
+          ".less": {
+            "syntax": "postcss-less"
+          }
+        },
+        "generateScopedName": "[name]__[local]___[hash:base64:5]"
+      }
+    ],
+    ["import", {"libraryName": "antd-mobile"}],
+    "@babel/plugin-transform-runtime"
+  ]
+}

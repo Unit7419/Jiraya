@@ -1,0 +1,44 @@
+{
+  "rules": {
+    "object-literal-sort-keys": false,
+    "interface-name": false,
+    "member-access": [true, "no-public"],
+    "ordered-imports": false
+  },
+  "no-console": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "esModuleInterop": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "target": "es5",
+    "jsx": "react",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "declaration": false,
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "noUnusedLocals": true,
+    "removeComments": true,
+    "strictNullChecks": false,
+    "outDir": "deploy",
+    "lib": ["es6", "es7", "esnext", "dom"],
+    "baseUrl": "src",
+    "paths": {
+      "@root/*": ["./*"],
+      "@app/*": ["app/*"],
+      "@service": ["app/lib/service/index"],
+      "@interface/*": ["app/lib/interfaces/*"],
+      "@lib/*": ["app/lib/*"],
+      "@img/*": ["app/style/images/*"],
+      "@component/*": ["app/components/*"],
+      "@util": ["app/lib/utils/index"],
+      "@jsUtil": ["app/lib/utils/jsUtil"],
+      "@decorator": ["app/lib/decorators/index"]
+    }
+  },
+  "exclude": ["node_modules", "dist", "deploy", "build", "scripts"]
+}

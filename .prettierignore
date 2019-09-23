@@ -1,0 +1,6 @@
+build/*
+dist/*
+# config/*
+# scripts/*
+src/app/typings/*
+# src/app/lib/fetch/*

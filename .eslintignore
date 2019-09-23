@@ -1,0 +1,8 @@
+build/*
+dist/*
+# config/*
+# scripts/*
+# **/*.ts
+# **/*.tsx
+src/app/typings/*
+src/app/lib/fetch/*
